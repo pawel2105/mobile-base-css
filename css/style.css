@@ -1,3 +1,16 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+
+/* =============================================================================
+   HTML5 element display
+   ========================================================================== */
+
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
 audio[controls], canvas, video { display: inline-block; *display: inline; *zoom: 1; }
 
@@ -6,11 +19,27 @@ audio[controls], canvas, video { display: inline-block; *display: inline; *zoom:
    Base
    ========================================================================== */
 
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ *    http://clagnut.com/blog/348/#c790
+ * 2. Force vertical scrollbar in non-IE
+ * 3. Remove Android and iOS tap highlight color to prevent entire container being highlighted
+ *    www.yuiblog.com/blog/2010/10/01/quick-tip-customizing-the-mobile-safari-tap-highlight-color/
+ * 4. Prevent iOS text size adjust on device orientation change, without disabling user zoom
+ *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+ */
+
 html { font-size: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
 body { margin: 0; font-size: 13px; line-height: 1.231; }
 
 body, button, input, select, textarea { font-family: sans-serif; color: #222; }
+
+/* 
+ * These selection declarations have to be separate
+ * No text-shadow: twitter.com/miketaylr/status/12228805301
+ * Also: hot pink!
+ */
 
 ::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
 ::selection { background: #fe57a1; color: #fff; text-shadow: none; }
@@ -23,6 +52,8 @@ body, button, input, select, textarea { font-family: sans-serif; color: #222; }
 a { color: #00e; }
 a:visited { color: #551a8b; }
 a:focus { outline: thin dotted; }
+
+/* Improve readability when focused and hovered in all browsers: people.opera.com/patrickl/experiments/keyboard/test */
 a:hover, a:active { outline: 0; }
 
 
@@ -34,7 +65,7 @@ abbr[title] { border-bottom: 1px dotted; }
 
 b, strong { font-weight: bold; }
 
-blockquote { margin: 1em 3.5em; }
+blockquote { margin: 1em 40px; }
 
 dfn { font-style: italic; }
 
@@ -44,8 +75,10 @@ ins { background: #ff9; color: #000; text-decoration: none; }
 
 mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
 
+/* Redeclare monospace font family: en.wikipedia.org/wiki/User:Davidgothberg/Test59 */
 pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
 
+/* Improve readability of pre-formatted text in all browsers */
 pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
 
 q { quotes: none; }
@@ -53,6 +86,7 @@ q:before, q:after { content: ""; content: none; }
 
 small { font-size: 85%; }
 
+/* Position subscript and superscript content without affecting line-height: gist.github.com/413930 */
 sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
 sup { top: -0.5em; }
 sub { bottom: -0.25em; }
@@ -71,7 +105,16 @@ nav ul, nav ol { list-style: none; margin: 0; padding: 0; }
    Embedded content
    ========================================================================== */
 
+/*
+ * Improve image quality when scaled in IE7
+ * code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+ */
+
 img { border: 0; -ms-interpolation-mode: bicubic; }
+
+/*
+ * Correct overflow displayed oddly in IE9 
+ */
 
 svg:not(:root) {
     overflow: hidden;
@@ -102,7 +145,18 @@ legend { border: 0; *margin-left: -7px; padding: 0; }
 /* Indicate that 'label' will shift focus to the associated form element */
 label { cursor: pointer; }
 
+/*
+ * 1. Correct font-size not inheriting in all browsers
+ * 2. Remove margins in FF3/4 S5 Chrome
+ * 3. Define consistent vertical alignment display in all browsers
+ */
+
 button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+
+/*
+ * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
+ * 2. Correct inner spacing displayed oddly in IE6/7
+ */
 
 button, input { line-height: normal; *overflow: visible; }
 
@@ -158,13 +212,20 @@ table { border-collapse: collapse; border-spacing: 0; }
     Author: Jonathan Verrecchia
    =================================================== */
 
+body{ font:16px/26px Helvetica, Helvetica Neue, Arial; }
+
+.wrapper{
+	width:90%;
+	margin:0 5%;
+}
+
 /* ===================
     ALL: Orange Theme
    =================== */
 
-#header-container{ border-bottom: 1em solid #e44d26; }
-#footer-container{ border-top:    1em solid #e44d26; }
-#main aside      { border-top:    1em solid #e44d26; }
+#header-container{ border-bottom: 20px solid #e44d26; }
+#footer-container{ border-top:    20px solid #e44d26; }
+#main aside      { border-top:    20px solid #e44d26; }
 
 #header-container,
 #footer-container,
@@ -183,8 +244,8 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 nav a{
 	display:block;
-	margin-bottom:1em;
-	padding:1em 0;
+	margin-bottom:10px;
+	padding:15px 0;
 
 	background:#e44d26;
 	color:white;
@@ -207,7 +268,7 @@ nav a:hover{
    ============== */
 
 #main{
-	padding:2em 0;
+	padding:30px 0;
 }
 
 #main article h1{
@@ -216,19 +277,21 @@ nav a:hover{
 
 #main aside{
 	color:white;
-	padding:0 5% 0.8em;
+	padding:0px 5% 10px;
 }
 
 #footer-container footer{
 	color:white;
-	padding:0.1em 0;
+	padding:20px 0;
 }
 
 /* ===============
     ALL: IE Fixes
    =============== */
 
-.ie7 #title{ padding-top:1em; }
+.ie7 #title{ padding-top:20px; }
+
+
 
 /* =============================================================================
    Non-semantic helper classes
@@ -261,125 +324,11 @@ nav a:hover{
 
 /* ==|== media queries ====================================================== */
 
-@media only screen and (min-width: 128px) and (max-width: 239px) {
-
-/* ====================
-    INTERMEDIATE: Menu
-   ==================== */
-body{ font:0.60em/26px Helvetica, Helvetica Neue, Arial; }
-
-.wrapper{
-	width:55%;
-	margin:0 3%;
-}
-	
-	nav a{
-		float:left;
-		width:14.5%;
-		margin:0 1.7%;
-		padding:5px 2%;
-		margin-bottom:0;
-	}
-	
-	nav li:first-child a{ margin-left:0;  }
-	nav li:last-child  a{ margin-right:0; }
-	
-/* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== */
-
-	nav ul li{
-		display:inline;
-	}	
-	.oldie nav a{
-		margin:0 0.7%;		
-	}
-}
-
-@media only screen and (min-width: 240px) and (max-width: 319px) {
-
-/* ====================
-    INTERMEDIATE: Menu
-   ==================== */
-
-body{ font:0.65em/26px Helvetica, Helvetica Neue, Arial; }	
-	
-.wrapper{
-	width:45%;
-	margin:0 3%;
-}	
-	
-	nav a{
-		float:left;
-		width:14.5%;
-		margin:0 1.7%;
-		padding:5px 2%;
-		margin-bottom:0;
-	}
-	
-	nav li:first-child a{ margin-left:0;  }
-	nav li:last-child  a{ margin-right:0; }
-	
-/* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== */
-
-	nav ul li{
-		display:inline;
-	}	
-	.oldie nav a{
-		margin:0 0.7%;		
-	}
-}
-
-@media only screen and (min-width: 320px) {
-
-/* ====================
-    INTERMEDIATE: Menu
-   ==================== */
-	
-body{ font:0.70em/26px Helvetica, Helvetica Neue, Arial; }	
-
-.wrapper{
-	width:90%;
-	margin:0 3%;
-}
-	
-	nav a{
-		float:left;
-		width:27%;
-		margin:0 1.7%;
-		padding:5px 2%;
-		margin-bottom:0;
-	}
-	
-	nav li:first-child a{ margin-left:0;  }
-	nav li:last-child  a{ margin-right:0; }
-	
-/* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== */
-
-	nav ul li{
-		display:inline;
-	}	
-	.oldie nav a{
-		margin:0 0.7%;		
-	}
-}
-
 @media only screen and (min-width: 480px) {
 
 /* ====================
     INTERMEDIATE: Menu
    ==================== */
-
-body{ font:0.80em/26px Helvetica, Helvetica Neue, Arial; }
-
-.wrapper{
-	width:90%;
-	margin:0 3%;
-}
 	
 	nav a{
 		float:left;
@@ -409,13 +358,6 @@ body{ font:0.80em/26px Helvetica, Helvetica Neue, Arial; }
 /* ====================
     WIDE: CSS3 Effects
    ==================== */
-
-.wrapper{
-	width:90%;
-	margin:0 3%;
-}
-
-body{ font:0.90em/26px Helvetica, Helvetica Neue, Arial; }
 
 	#header-container,
 	#main aside{
@@ -458,13 +400,10 @@ body{ font:0.90em/26px Helvetica, Helvetica Neue, Arial; }
     Maximal Width
    =============== */
 
-body{ font:1em/26px Helvetica, Helvetica Neue, Arial; }
-
 	.wrapper{
 		width:1026px; /* 1140px - 10% for margins */
 		margin:0 auto;
 	}
-	
 }
 
 
