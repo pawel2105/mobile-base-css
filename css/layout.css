@@ -1,0 +1,73 @@
+@media only screen and (min-width: 30em) {
+
+	nav a{
+		float:left;
+		width:27%;
+		margin:0 1.7%;
+		padding:1.563em 2%;
+		margin-bottom:0;
+	}
+	
+	nav li:first-child a{ margin-left:0;  }
+	nav li:last-child  a{ margin-right:0; }
+	
+	nav ul li{
+		display:inline;
+	}	
+	
+	.oldie nav a{
+		margin:0 0.7%;		
+	}
+}
+
+@media only screen and (min-width: 48em) {
+
+	#header-container,
+	#main aside{
+		-webkit-box-shadow:0 0.313em 0.625em #aaa;
+		   -moz-box-shadow:0 0.313em 0.625em #aaa;
+		        box-shadow:0 0.313em 0.625em #aaa;
+	}
+	
+	#title{
+		float:left;
+	}
+
+	nav{
+		float:right;
+		width:38%;
+	}
+
+	#main article{
+		float:left;
+		width:57%;
+	}
+		
+	#main aside{
+		float:right;
+		width:28%;
+	}
+}
+
+@media only screen and (min-width: 71.25em) {
+
+	.wrapper{
+		width:64.125em; /* 71.25em - 10% for margins */
+		margin:0 auto;
+	}
+}
+
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; }
+  a, a:visited { color: #444 !important; text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
+  pre, blockquote { border: 0.063em solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; }
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3{ page-break-after: avoid; }
+}
