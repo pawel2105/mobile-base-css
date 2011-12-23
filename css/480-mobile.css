@@ -126,17 +126,17 @@ table { border-collapse: collapse; border-spacing: 0; }
 body{ font:1em/1.625em Helvetica, Helvetica Neue, Arial; }
 
 .wrapper{
-	width:90%;
-	margin:0 5%;
+	width: 90%;
+	margin:0 auto;
 }
 
 /* ===================
     ALL: Orange Theme
    =================== */
 
-#header-container{ border-bottom: 1.25em solid #e44d26; }
-#footer-container{ border-top:    1.25em solid #e44d26; }
-#main aside      { border-top:    1.25em solid #e44d26; }
+#header-container{ border-bottom: 0.5em solid #e44d26; }
+#footer-container{ border-top:    0.5em solid #e44d26; }
+#main aside      { border-top:    0.5em solid #e44d26; }
 
 #header-container,
 #footer-container,
@@ -155,9 +155,13 @@ body{ font:1em/1.625em Helvetica, Helvetica Neue, Arial; }
 
 nav a{
 	display:block;
-	margin-bottom:0.625em;
-	padding:0.938em 0;
-
+	margin-bottom:0.188em;
+	padding:0.188em 0;
+	width:27%;
+	margin:0 1.7%;
+	padding:1.563em 2%;
+	margin-bottom:0;
+	float:left;
 	background:#e44d26;
 	color:white;
 
@@ -174,26 +178,40 @@ nav a:hover{
 	text-decoration:underline;
 }
 
+nav li:first-child a{ margin-left:0;  }
+nav li:last-child  a{ margin-right:0; }
+
+nav ul li{
+	display:inline;
+}
+
 /* ==============
     MOBILE: Main
    ============== */
 
 #main{
-	padding:1.875em 0;
+	padding:0.188em 0;
 }
 
-#main article h1{
-	font-size:2em;
+#main article h1, h2, h3{
+	font-size:1.25em;
 }
 
 #main aside{
 	color:white;
-	padding:0 5% 0.625em;
+	padding:0 3% 0.188em;
+	width:90%;
+	margin-bottom: 2%;
+}
+
+#main article{
+	width:90%;
 }
 
 #footer-container footer{
 	color:white;
-	padding:1.25em 0;
+	padding:0.125em 0;
+	text-align: center;
 }
 
 /* ===============
@@ -220,17 +238,6 @@ nav a:hover{
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
 
-@media print {
-  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; }
-  a, a:visited { color: #444 !important; text-decoration: underline; }
-  a[href]:after { content: " (" attr(href) ")"; }
-  abbr[title]:after { content: " (" attr(title) ")"; }
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
-  pre, blockquote { border: 0.063em solid #999; page-break-inside: avoid; }
-  thead { display: table-header-group; }
-  tr, img { page-break-inside: avoid; }
-  img { max-width: 100% !important; }
-  @page { margin: 0.5cm; }
-  p, h2, h3 { orphans: 3; widows: 3; }
-  h2, h3{ page-break-after: avoid; }
+.oldie nav a{
+	margin:0 0.7%;		
 }

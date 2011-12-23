@@ -12,11 +12,16 @@
 	<meta name="author" content="Pawel Janiak">
 
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-
-	<!-- Base styles for all browsers including old-ass mobile browsers -->
-	    <link rel="stylesheet" href="css/global.css" media="all">
+	<!-- Testing 128px, 240px CSS. Remove after and edit global.css with these values if they work. Take colours from backup-->
+		<link rel="stylesheet" href="css/128-mobile.css" media="all">
+		<link rel="stylesheet" href="css/240-mobile.css" media="all and (min-width: 15em)">
+		<link rel="stylesheet" href="css/480-mobile.css" media="all and (min-width: 30em)">
+		<link rel="stylesheet" href="css/768-mobile.css" media="all and (min-width: 48em)">
+		<link rel="stylesheet" href="css/1140-mobile.css" media="all and (min-width: 71.25em)">
+	<!-- Base styles for all browsers including old-ass mobile browsers  (Remove media query)-->
+	    <link rel="stylesheet" href="css/global.css" media="all and (min-width: 70em)">
 	<!-- Layout for wide browsers -->
-	    <link rel="stylesheet" href="css/layout.css" media="all and (min-width: 30em)">
+	    <link rel="stylesheet" href="css/layout.css" media="all and (min-width: 70em)">
 	<!-- SAME layout file for IE 6-8 -->
 	    <!--[if (lt IE 9)&(!IEMobile)]>
 	        <link rel="stylesheet" href="/css/layout.css" media="all">
@@ -42,7 +47,7 @@
 			
 			<article>
 				<header>
-					<h1>What is this?</h1>
+					<h1>What is this? - Fix 786 and you're good to go</h1>
 					<p>This is a boilerplate template forked from <a href="http://verekia.com/initializr/responsive-template">Jonathan Verrecchia's responsive template</a>. It takes care of rendering the right layout on various devices based on their viewport sizes, but in addition to that, offers mobile support for devices that have a screen smaller than 480px. The base size starts at 128px and has it's next breakpoints at 240px and 320px.</p>
 				</header>
 				<section>
