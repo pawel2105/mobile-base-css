@@ -1,0 +1,221 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio[controls], canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+
+html { font-size: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+body { margin: 0; font-size: 0.813em; line-height: 1.231; }
+
+body, button, input, select, textarea { font-family: sans-serif; color: #222; }
+
+::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+
+a { color: #00e; }
+a:visited { color: #551a8b; }
+a:focus { outline: thin dotted; }
+
+a:hover, a:active { outline: 0; }
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+
+abbr[title] { border-bottom: 0.063em dotted; }
+
+b, strong { font-weight: bold; }
+
+blockquote { margin: 1em 2.5em; }
+
+dfn { font-style: italic; }
+
+hr { display: block; height: 0.063em; border: 0; border-top: 0.063em solid #ccc; margin: 1em 0; padding: 0; }
+
+ins { background: #ff9; color: #000; text-decoration: none; }
+
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+/* Redeclare monospace font family: en.wikipedia.org/wiki/User:Davidgothberg/Test59 */
+pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
+
+/* Improve readability of pre-formatted text in all browsers */
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+
+small { font-size: 85%; }
+
+/* Position subscript and superscript content without affecting line-height: gist.github.com/413930 */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+ul, ol { margin: 1em 0; padding: 0 0 0 2.5em; }
+dd { margin: 0 0 0 2.5em; }
+nav ul, nav ol { list-style: none; margin: 0; padding: 0; }
+
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+
+img { border: 0; -ms-interpolation-mode: bicubic; }
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+
+figure { margin: 0; }
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+
+legend { border: 0; *margin-left: -0.438em; padding: 0; }
+
+label { cursor: pointer; }
+
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+
+button, input { line-height: normal; *overflow: visible; }
+
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
+input[type="search"] { -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+textarea { overflow: auto; vertical-align: top; }
+
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+
+/* =============================================================================
+   Primary styles
+   Author: 
+   ========================================================================== */
+
+
+/* ===================================================
+    Initializr styles
+    http://verekia.com/initializr/responsive-template
+    Author: Jonathan Verrecchia
+   =================================================== */
+
+body{ font:1em/1.625em Helvetica, Helvetica Neue, Arial; }
+
+.wrapper{
+	width:90%;
+	margin:0 5%;
+}
+
+/* ===================
+    ALL: Orange Theme
+   =================== */
+
+#header-container{ border-bottom: 1.25em solid #e44d26; }
+#footer-container{ border-top:    1.25em solid #e44d26; }
+#main aside      { border-top:    1.25em solid #e44d26; }
+
+#header-container,
+#footer-container,
+#main aside{
+	background:#f16529;
+}
+
+#title{ color:white; }
+
+::-moz-selection { background: #f16529; color: #fff; text-shadow: none; }
+::selection      { background: #f16529; color: #fff; text-shadow: none; }
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+nav a{
+	display:block;
+	margin-bottom:0.625em;
+	padding:0.938em 0;
+
+	background:#e44d26;
+	color:white;
+
+	text-align:center;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+nav a:hover, nav a:visited{
+	color:white;
+}
+
+nav a:hover{
+	text-decoration:underline;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+#main{
+	padding:1.875em 0;
+}
+
+#main article h1{
+	font-size:2em;
+}
+
+#main aside{
+	color:white;
+	padding:0 5% 0.625em;
+}
+
+#footer-container footer{
+	color:white;
+	padding:1.25em 0;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 #title{ padding-top:1.25em; }
+
+.ir { display: block; text-indent: -999em; overflow: hidden;
+	  background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
+
+.hidden { display: none; visibility: hidden; }
+
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 0.063em; margin: -0.063em;
+	              overflow: hidden; padding: 0; position: absolute; width: 0.063em; }
+
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+	clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+.invisible { visibility: hidden; }
+
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
