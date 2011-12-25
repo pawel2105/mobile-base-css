@@ -126,8 +126,8 @@ table { border-collapse: collapse; border-spacing: 0; }
 body{ font:1em/1.625em Helvetica, Helvetica Neue, Arial; }
 
 .wrapper{
-	width:64.125em; /* 71.25em - 10% for margins */
-	margin:0 auto;
+	width:90%;
+	margin:0 5%;
 }
 
 /* ===================
@@ -135,6 +135,8 @@ body{ font:1em/1.625em Helvetica, Helvetica Neue, Arial; }
    =================== */
 
 #header-container{ border-bottom: 0.5em solid #e44d26; }
+#footer-container{ border-top:    0.5em solid #e44d26; }
+#main aside      { border-top:    0.5em solid #e44d26; }
 
 #header-container,
 #main aside{
@@ -143,16 +145,13 @@ body{ font:1em/1.625em Helvetica, Helvetica Neue, Arial; }
 	        box-shadow:0 0.313em 0.625em #aaa;
 }
 
-#footer-container{ border-top:    0.5em solid #e44d26; }
-#main aside      { border-top:    0.5em solid #e44d26; }
-
 #header-container,
 #footer-container,
 #main aside{
 	background:#f16529;
 }
 
-#title{ color:white; float:left; }
+#title{ float: left; }
 
 ::-moz-selection { background: #f16529; color: #fff; text-shadow: none; }
 ::selection      { background: #f16529; color: #fff; text-shadow: none; }
@@ -160,12 +159,11 @@ body{ font:1em/1.625em Helvetica, Helvetica Neue, Arial; }
 /* ==============
     MOBILE: Menu
    ============== */
-
 nav{
 	float:right;
 	width:38%;
 }
-
+	
 nav a{
 	display:block;
 	margin-bottom:0.188em;
@@ -199,16 +197,14 @@ nav a:hover{
 	font-size:1.25em;
 }
 
-#main aside{
-	color:white;
-	padding:0 5% 0.188em;
-	float:right;
-	width:28%;
-}
-
 #main article{
 	float:left;
 	width:57%;
+}
+	
+#main aside{
+	float:right;
+	width:28%;
 }
 
 #footer-container footer{
